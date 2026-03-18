@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON 格式化工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JSON 格式化工具</h1>
+            <p class="subtitle">美化、压缩和转义 JSON 格式</p>
+        </header>
+
+        <div class="toolbar">
+            <button id="formatBtn" class="btn btn-primary">美化 JSON</button>
+            <button id="minifyBtn" class="btn btn-secondary">压缩 JSON</button>
+            <button id="escapeBtn" class="btn btn-secondary">转义 JSON</button>
+            <button id="unescapeBtn" class="btn btn-secondary">反转义 JSON</button>
+            <button id="clearBtn" class="btn btn-danger">清空</button>
+            <button id="copyBtn" class="btn btn-success">复制结果</button>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="input-section">
+                <div class="section-header">
+                    <h2>输入</h2>
+                    <span class="char-count" id="inputCharCount">0 字符</span>
+                </div>
+                <textarea id="inputArea" class="textarea" placeholder="在此输入或粘贴 JSON 数据..."></textarea>
+            </div>
+
+            <div class="output-section">
+                <div class="section-header">
+                    <h2>输出</h2>
+                    <span class="char-count" id="outputCharCount">0 字符</span>
+                </div>
+                <div class="textarea-wrapper">
+                    <div id="outputArea" class="json-highlight" contenteditable="false" placeholder="处理后的 JSON 将显示在这里..."></div>
+                    <textarea id="outputAreaRaw" class="textarea-hidden" readonly></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="error-message" id="errorMessage"></div>
+    </div>
+
+    <footer class="footer">
+        作者：子礼 copyright 2026-02-09
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
