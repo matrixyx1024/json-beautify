@@ -38,6 +38,8 @@ json-beautify/
 └── README.md            # 说明文档
 ```
 
+本项目的样式与脚本均为纯静态文件，不需要构建步骤。
+
 ## 技术栈
 
 - 纯原生 HTML5 + CSS3 + JavaScript
